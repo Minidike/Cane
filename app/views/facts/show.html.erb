@@ -34,7 +34,7 @@
           <% end %>
           
           <% if can? :destroy, @fact %>
-            <%= link_to "Eliminar", edit_fact_path(@fact), method: :delete, data: {confirm: "Are you sure?"}, class: "ui red small button" %>
+            <%= link_to "Eliminar", @fact, method: :delete, data: {confirm: "Are you sure?"}, class: "ui red small button" %>
           <% end %>
 
         <% end %>
